@@ -1,21 +1,93 @@
 <html>
     <head>
         <title>business card</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             .p1{
                 border: 2px double black;
                 background-color: aqua;
-
             }
-            .p2{
+
+            .main{
+                border: 2px solid transparent;
+                background-color: whitesmoke;
+                display: flex;
+                width: 150px;
+                height:250px;
+                display: flex;
+                display: inline-block;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 10px;
+            }
+            img{
+               width: 60px;
+               display: flex;
+               height:60;
+               align-content: center;
+               justify-content: center;
+                border-radius: 50px;
+                border: 2px solid transparent;
+            }
+            .child{
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                justify-content: space-between;
+                align-items: center;
+            }
+            p{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 10;
                 text-align: center;
             }
-            
+            .main1{
+                display: flex;
+                justify-content: center;
+                justify-content: space-around;
+                justify-content: space-evenly;
+            }
         </style>
     </head>
     <body>
         <div class="p1">
-            <span class="p2">Team</span>
+            <h1 align="center">Team</h1>
+            <h5 align="center">Team is defined as a group of people who perform independent tasks to work toword accomplishing a common mission or specific objective</h5>
+            <div class="main1" align="center">
+            <div class="main">
+                <div class="child">
+                    <img src="./billgates.jpeg">
+                    <p>englalnd</p>
+                    <p>Billgates is founder and CEO of microsoft In 2008, he transitioned from his day-to-day role with Microsoft to focus full-time on his foundation's work to expand opportunity around the world.</p><br>
+                    <span><i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin-square"></i>
+                    <i class="fa fa-facebook-official"></i></span>
+                </div>
+            </div>
+            <div class="main">
+                <div class="child">
+                    <img src="./jeff.jpeg">
+                    <p>englalnd</p>
+                    <p>Amazon founder Jeff Bezos is the second richest person in the world. He sent William Shatner and Michael Strahan to space on his sub-orbital spaceflight service, Blue Origin a space company</p><br>
+                <span><i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin-square"></i>
+                    <i class="fa fa-facebook-official"></i></span>
+                </div>
+            </div>
+            <div class="main">
+                <div class="child">
+                    <img src="./sunder.jpeg">
+                    <p>englalnd</p>
+                    <p>Sundar is the CEO of Google and Alphabet and serves on Alphabet’s Board of Directors. Under his leadership, Google has been focused on developing products and services, powered by the latest advances in AI, that offer help in moments big and small.</p>
+                <span><i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin-square"></i>
+                    <i class="fa fa-facebook-official"></i></span>
+                </div>
+            </div>
+        </div>
         </div>
     </body>
 </html>
