@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        @media screen and (min-width : 456px){
+            h1{
+                color: yellow;
+                text-align: center;background-color: orange;
+            }
+            img{
+                border: 2px solid;
+                display: flex;
+                margin:10px;
+                width: 200px;
+                height: 200px;
+                justify-content: center;
+            }
+            .md{
+                display: flex;
+                justify-content: center;
+                flex-wrap:wrap;
+                background-color: red;
+                /* align-content: center; */
+            }
+            .aus:hover p{
+                 display: block;
+                 text-align: center;
+            }
+            .i1:hover
+            {
+                width: 50%;
+                display:flex;
+                text-align: center;
+                justify-content: center;
+                margin-left: 130px;
+            }
+            p
+            {
+                display: none;
+            }
+            .ENG:hover p{
+                display: block;
+                 text-align: center;
+            }
+            .i2:hover{
+                width: 50%;
+                display:flex;
+                text-align: center;
+                justify-content: center;
+                margin-left: 130px;
+            }
+            
+        }
+    </style>
+</head>
+    <body>
+        <h1>gallery</h1>
+        <div class="md">
+            <div class="aus">
+                <img class="i1" src="./AUS.png"/>
+                <p>Austrlia</p>
+            </div>
+            <div class="ENG">
+                <img class="i2" src="./ENG.png"/>
+                <p>England</p>
+            </div>
+            
+            
+            <img src="./kgf.jpeg"/>
+            <img src="./AUS.png"/>
+            <img src="./ENG.png"/>
+            <img src="./AUS.png"/>
+            <img src="./ENG.png"/>
+        </div>
+    </body>
+</html>
