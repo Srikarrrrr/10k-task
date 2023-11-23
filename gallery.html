@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <style>
+        @media screen and (min-width:468px) {
+            .md{
+                border: 5px double;
+                background-color: black;
+                display: grid;
+                grid-template-columns: auto auto;
+                text-align: center;
+                justify-content: space-evenly;
+            }
+            .cd{
+               border: 2px solid;
+               background-color: white;
+               padding: 20px;
+               display: grid;
+               grid-template-columns: auto auto auto;  
+            }
+            .cd1{
+               border: 2px solid;
+               background-color: white;
+               padding: 20px;
+               display: grid;
+               grid-template-columns: auto auto auto;  
+            }
+            .cd:hover p{
+                display: inline-block;
+                text-align: center;
+                background-color: aquamarine;
+            }
+            .cd1:hover p{
+                display: inline-block;
+                text-align: center;
+                background-color: aquamarine;
+            }
+            img{
+                width: 250px;
+                height: 250px;
+            }
+            p{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="md">
+        <div class="cd">
+            <img src="./INDIA.png"/>
+            <p>
+                <img src="./derailed.jpg"/>
+                <img src="./derailed.jpg"/>
+                <img src="./derailed.jpg"/>
+                <img src="./derailed.jpg"/>
+            </p>
+        </div>
+        <div class="cd1">
+            <img src="./NZ.png"/>
+            <p>
+                <img src="./derailed.jpg"/>
+                <img src="./derailed.jpg"/>
+                <img src="./derailed.jpg"/>
+                <img src="./derailed.jpg"/>
+            </p>
+        </div>
+        <div class="cd">
+            <img src="./PAK.png"/>
+        </div>
+        <div class="cd">
+            <img src="./AUS.png"/>
+        </div>
+    </div>
+</body>
+</html>
