@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes but {
+            0%  {left:170px; top:150px;}
+            50% {transform: rotateY(180deg);left:10px; top:480px;}
+            75% {transform: rotateY(0deg);left:-40px; top:778px;}
+            100%{transform: rotateY(180deg);left:03px; top:1160px;} 
+        }
+        .md1{
+            font-size: 125px;
+            animation-name:but;
+            animation-delay:2s;
+            animation-duration: 15s;
+            position: relative;
+        }
+        .md{
+            border: 4px double black;
+            width: 900px;
+            height: 1550px;
+            display: flex;
+            display: inline-block;
+            background-color: aqua;
+            }
+        .cd1{
+            border: 1px solid black;
+            display: flex;
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+            margin: 10px;
+            padding: 10px;
+        }
+        .cd2{
+            border: 1px solid black;
+            margin-left: 500px;
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .cd3{
+            border: 1px solid black;
+            display: flex;
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .cd4{
+            border: 1px solid black;
+            margin-left: 500px;
+            display: inline-block; 
+            text-align: center; 
+            font-weight: bold;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="md">
+        <div class="md1"><img src="./butterflywbg-removebg-preview.png"></div>
+         <div class="cd1">
+            <img src="./egg.jpg"/><br>
+            Egg
+            <p>The first stage of a butterfly life cycle is Egg</p>
+        </div>
+        <div class="cd2">
+            <img src="./catterpillar.jpg"/><br>
+            Catterpillar
+            <p>The second stage of a butterfly life cycle is catterpillar</p>
+        </div>
+        <div class="cd3">
+            <img src="./chrysalis.jpg"/><br>
+            Chrysalis
+            <p>The third stage of the butterfly life cycle is chrysais</p>
+        </div>
+        <div class="cd4">
+            <img src="./butterfly.jpg"/><br>
+            <span>Butterfly</span>
+            <p>The final stage of the bututerfly is adult butterfly</p>
+        </div> 
+    </div>
+</body>
+</html>
+
+
+
