@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spacecount</title>
+</head>
+<body>
+    <script>
+        function spacecount(a){
+            var count=0
+            var sri=0
+            for(i=0;i<a.length;i++){
+                if(a[i]==" "){
+                    count++; 
+                }
+                else{
+                    sri++
+                }
+            }
+            console.log("number of spaces are",count);
+            console.log("number of letters are",sri);
+        }
+        spacecount(" deekshith is a shitty guy")
+    </script>
+</body>
+</html>

@@ -3,21 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>string</title>
+    <title>slice</title>
 </head>
 <body>
     <script>
-        function concatenation(a) {
-   
-    for (let i = 0; i < a.length; i++) {
-        if (i % 2 == 0) {
-            console.log(a[i]);
+        function slice(a, b){
+           for(i=b;i<a.length;i++){
+             d=a[i];
+             console.log(d);
+           }
         }
-    }
-    
-}
-
-concatenation("srikar");
+        slice('srikar', 3)
     </script>
 </body>
 </html>
