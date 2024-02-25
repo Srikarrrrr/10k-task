@@ -1,73 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Language Translator</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-
-textarea, select, button {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 16px;
-}
-
-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-#outputText {
-    margin-top: 20px;
-    font-size: 18px;
-}
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="translator-container">
         <h1>Language Translator</h1>
-        <textarea id="inputText" placeholder="Enter text to translate"></textarea>
-        <select id="languageSelect">
+        <select id="source-language">
             <option value="en">English</option>
             <option value="es">Spanish</option>
-            <option value="fr">French</option>
-            <!-- Add more language options as needed -->
+            <!-- Add more languages as needed -->
         </select>
+        <textarea id="source-text" placeholder="Enter text to translate"></textarea>
         <button onclick="translateText()">Translate</button>
-        <div id="outputText"></div>
+        <div id="translated-text"></div>
     </div>
 
-    <script>
-        function translateText() {
-    const inputText = document.getElementById('inputText').value;
-    const selectedLanguage = document.getElementById('languageSelect').value;
-
-    // Replace with your preferred translation API or service
-    // For example, you can use Google Translate API or Microsoft Translator API
-    // Here, I'm using a dummy translation function
-    const translatedText = dummyTranslate(inputText, selectedLanguage);
-
-    document.getElementById('outputText').textContent = translatedText;
-}
-
-function dummyTranslate(text, language) {
-    // Replace this with actual translation logic
-    // For demonstration purposes, just return the input text
-    return text;
-}
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

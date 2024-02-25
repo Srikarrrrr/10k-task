@@ -7,11 +7,11 @@
 
 // //2.minutes to secondsd conversion
 
-// function minutestseconds(a){
-//     var b=a/60
-//     console.log(b)
-// }
-// minutestseconds(4)
+function minutestseconds(a){
+    var b=a/60
+    console.log(b)
+}
+minutestseconds(4)
 
 // //how many seconds in minutes
 

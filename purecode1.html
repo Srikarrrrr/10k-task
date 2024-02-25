@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+         @media screen and (min-width: 320px){
+            .parent{
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            background-color: rgb(32, 31, 31);
+            flex-wrap: wrap;
+            color: rgb(156, 147, 147);
+        }
+        .child1{
+            border: 2px solid transparent;
+            width: 15%;
+            height: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            border-radius:10px;
+            justify-content: space-evenly;
+
+        }
+        .child2{
+            border: 2px solid transparent;
+            width: 15%;
+            height: 15%;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius:10px;
+            align-items:center;
+            justify-content: space-evenly;
+        }
+        .child3{
+            border: 2px solid transparent;
+            width: fit-content;
+            height: 15%;
+            border-radius:10px;
+        }
+        .child4{
+            border: 2px solid transparent;
+            width: fit-content;
+            height: 15%;
+            border-radius:10px;
+        }
+        #box{
+            border: 1px solid ;
+            border-radius: 4px;
+            flex-wrap: wrap;
+            height: 15%;
+            width: fit-content;
+            justify-content: space-evenly;
+        }
+        #box2{
+            border-bottom: 2px solid black;
+        }
+        img{
+            float: left;
+            width: 60px;
+            height:50px
+        }
+        span{
+            color: greenyellow;
+        }
+        h1{
+            color:antiquewhite
+        }
+         }
+         @media screen and (max-width: 768px){
+            .parent{
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            width: 100%;
+            background-color: rgb(32, 31, 31);
+            flex-wrap: wrap;
+            color: rgb(156, 147, 147);
+        }
+        .child1{
+            border: 2px solid transparent;
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            border-radius:10px;
+            justify-content: space-evenly;
+
+        }
+        .child2{
+            border: 2px solid transparent;
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius:10px;
+            align-items:center;
+            justify-content: space-evenly;
+        }
+        .child3{
+            border: 2px solid transparent;
+            width: 50%;
+            border-radius:10px;
+        }
+        .child4{
+            border: 2px solid transparent;
+            width: 50%;
+            border-radius:10px;
+        }
+        #box{
+            border: 1px solid ;
+            border-radius: 4px;
+            flex-wrap: wrap;
+            height: 15%;
+            width: fit-content;
+            justify-content: space-evenly;
+        }
+        #box2{
+            border-bottom: 2px solid black;
+        }
+        img{
+            float: left;
+            width: 60px;
+            height:50px
+        }
+        span{
+            color: greenyellow;
+        }
+        h1{
+            color:antiquewhite
+        }
+         }
+        @media screen and (min-width: 768px){
+        .parent{
+            border: 2px solid black;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            width: 100%;
+            flex-direction: row;
+            background-color: rgb(32, 31, 31);
+            flex-wrap: wrap;
+            color: rgb(156, 147, 147);
+        }
+        .child1{
+            border: 2px solid transparent;
+            width: 13%;
+            height: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            border-radius:10px;
+            justify-content: space-evenly;
+
+        }
+        .child2{
+            border: 2px solid transparent;
+            width: 15%;
+            height: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius:10px;
+            align-items:center;
+            justify-content: space-evenly;
+            flex-direction: row;
+        }
+        .child3{
+            border: 2px solid transparent;
+            width: 15%;
+            height: 50%;
+            border-radius:10px;
+        }
+        .child4{
+            border: 2px solid transparent;
+            width: 20%;
+            height: 50%;
+            border-radius:10px;
+        }
+      
+        #box{
+            border: 1px solid ;
+            border-radius: 4px;
+            flex-wrap: wrap;
+            height: 50%;
+            width: fit-content;
+            justify-content: space-evenly;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #box2{
+            border-bottom: 2px solid black;
+            flex-direction: row;
+            justify-items: center;
+            align-items: center;
+        }
+        img{
+            float: left;
+            width: 60px;
+            height:50px
+        }
+        span{
+            color: greenyellow;
+        }
+        h1{
+            color:antiquewhite
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">
+            <h1>About Us</h1>
+                <p>it includes rich features & contents. designed & developed based on Onepage/ multi-page layout,blog themes,world press themes and blogspot.<br>you can use any layout from any demo anywhere <br>webblogoverflow is completely creative clean and 100% respnsive website put your business into next level with webublogoverflow</p>
+                <div><h1>social links<br></h1></div>
+            <div id="box">facebook</div>
+            <div id="box">twitter</div>
+            <div id="box">pintrest</div>
+            <div id="box">youtube</div>
+            <div id="box">linkedin</div>
+        </div>
+        <div class="child2">
+            <div><h1>Tags widget</h1><br></div>
+            <div id="box">classy</div>
+            <div id="box">blog</div>
+            <div id="box">creative</div>
+            <div id="box">onepage</div>
+            <div id="box">multipurpose</div>
+            <div id="box">minimal</div>
+            <div id="box">classic</div>
+            <div id="box">medical</div>
+            <div><h1>Important Links</h1><br></div>
+            <div id="box2">terms &conditions</div><br>
+            <div id="box2">About Lisences</div><br>
+            <div id="box2">Help & Support</div><br>
+            <div id="box2">Careers</div><br>
+            <div id="box2">Privacy Policy</div><br>
+            <div id="box2">Community & forum</div><br>
+    
+        </div>
+        <div class="child3">
+            <div><h1>Latest News</h1></div>
+           
+            <div id="box2">
+                <img src="../card.jpeg" alt="image">
+                <div class="text1">Your Blog Title Goes Here<br><span>21 Jan 2018</span><br>
+                Lorem ipsum dolor sit amet </div>
+            </div>
+            <div id="box2">
+                <img src="../card.jpeg" alt="image">
+                <div class="text1">Your Blog Title Goes Here<br><span>21 Jan 2018</span><br>
+                Lorem ipsum dolor sit amet </div>
+            </div>
+            <div id="box2">
+                <img src="../card.jpeg" alt="image">
+                <div class="text1">Your Blog Title Goes Here<br><span>21 Jan 2018</span><br>
+                Lorem ipsum dolor sit amet </div>
+            
+        </div>
+        </div>
+        <div class="child4">
+            <h1>Quick Contact<br></h1>
+            <h3>phone:</h3>
+            <h4>+255 789 54 50 40</h4>
+            <h4>+255 789 54 50 40</h4>
+            <h1>Email:<br></h1>
+            <h4>support@webblogerflow.com<br>luckmoshy@gmail.com</h4>
+        </div>
+    </div>
+    
+</body>
+</html>
